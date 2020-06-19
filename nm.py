@@ -2,19 +2,17 @@
 #coding=utf-8
 
 
-print "import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,cookielib,requests,mechanize"
-print "from multiprocessing.pool import ThreadPool"
-print "from requests.exceptions import ConnectionError"
-print "from mechanize import Browser"
+import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,cookielib,requests,mechanize
+from multiprocessing.pool import ThreadPool
+from requests.exceptions import ConnectionError
+from mechanize import Browser
 
-
-print "reload(sys)"
-print "sys.setdefaultencoding('utf8')"
-print "br = mechanize.Browser()"
-print "br.set_handle_robots(False)"
-print "br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)"
-print "br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]"
-
+reload(sys)
+sys.setdefaultencoding('utf8')
+br = mechanize.Browser()
+br.set_handle_robots(False)
+br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
+br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.26')]
 
 def keluar():
 	print "\033[1;96m[!] \x1b[1;91mExit"
@@ -79,23 +77,23 @@ def hapus():
         os.system ("clear")
 
 print """
-print "\033[0;31m ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-print "\033[0;31m ▒▒▒▒▒▒▒▒▄▄▄▄▄▄▄▄▒▒▒▒▒▒
-print "\033[0;31m ▒▒█▒▒▒▄██████████▄▒▒▒▒
-print "\033[0;31m ▒█▐▒▒▒████████████▒▒▒▒
-print "\033[0;31m ▒▌▐▒▒██▄▀██████▀▄██▒▒▒
-print "\033[0;31m ▐┼▐▒▒██▄▄▄▄██▄▄▄▄██▒▒▒
-print "\033[0;31m ▐┼▐▒▒██████████████▒▒▒
-print "\033[0;31m ▐▄▐████─▀▐▐▀█─█─▌▐██▄▒
-print "\033[0;31m ▒▒█████──────────▐███▌
-print "\033[0;31m ▒▒█▀▀██▄█─▄───▐─▄███▀▒
-print "\033[0;31m ▒▒█▒▒███████▄██████▒▒▒
-print "\033[0;31m ▒▒▒▒▒██████████████▒▒▒
-print "\033[0;31m ▒▒▒▒▒██████████████▒▒▒
-print "\033[0;31m ▒▒▒▒▒█████████▐▌██▌▒▒▒
-print "\033[0;31m ▒▒▒▒▒▐▀▐▒▌▀█▀▒▐▒█▒▒▒▒▒
-print "\033[0;31m ▒▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▌▒▒▒▒▒
-print "\033[0;31m ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+\033[0;31m ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+\033[0;31m ▒▒▒▒▒▒▒▒▄▄▄▄▄▄▄▄▒▒▒▒▒▒
+\033[0;31m ▒▒█▒▒▒▄██████████▄▒▒▒▒
+\033[0;31m ▒█▐▒▒▒████████████▒▒▒▒
+\033[0;31m ▒▌▐▒▒██▄▀██████▀▄██▒▒▒
+\033[0;31m ▐┼▐▒▒██▄▄▄▄██▄▄▄▄██▒▒▒
+\033[0;31m ▐┼▐▒▒██████████████▒▒▒
+\033[0;31m ▐▄▐████─▀▐▐▀█─█─▌▐██▄▒
+\033[0;31m ▒▒█████──────────▐███▌
+\033[0;31m ▒▒█▀▀██▄█─▄───▐─▄███▀▒
+\033[0;31m ▒▒█▒▒███████▄██████▒▒▒
+\033[0;31m ▒▒▒▒▒██████████████▒▒▒
+\033[0;31m ▒▒▒▒▒██████████████▒▒▒
+\033[0;31m ▒▒▒▒▒█████████▐▌██▌▒▒▒
+\033[0;31m ▒▒▒▒▒▐▀▐▒▌▀█▀▒▐▒█▒▒▒▒▒
+\033[0;31m ▒▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▌▒▒▒▒▒
+\033[0;31m ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 """
 
 print "\033[1;34m ============================"
@@ -516,4 +514,4 @@ def brute():
         except IOError:
             print '\033[1;97m[!] File not found...'
             print """\n\033[1;97m[!] \033[1;97mLooks like you don't have a wordlist"""
-
+            super()
